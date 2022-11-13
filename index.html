@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power Code Girl</title>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Sriracha', cursive;
+        }
+        .container {
+            background: rgb(208, 180, 134);
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        nav ul li {
+            list-style: none;
+            display: inline-block;
+            padding: 4px 35px;
+            margin: 4px;
+            font-size: 22px;
+            font-weight: 500;
+            color: rgba(132, 85, 8, 0.674);
+            cursor: pointer;
+            position: relative;
+            z-index: 2;
+            transition: color 0.5s;
+        }
+        nav ul li::after {
+            content:'';
+            background: rgba(78, 48, 4, 0.84);
+            width: 100%;
+            height: 90%;
+            border-radius: 30px;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            z-index: -1;
+            opacity: 0;
+            transition: top 0.5s, opacity 0.5s;
+        }
+        nav ul li:hover {
+            color: lemonchiffon;
+        }
+        nav ul li:hover::after {
+            top: 50%;
+            opacity: 1;
+        }
+        .frame {
+            position: relative;
+            border-radius: 25px;
+            padding: 20px;
+            margin-top: 30px;
+            margin-left: 350px;
+            width: 700px;
+            height: 500px;
+            background-color: rgb(208, 180, 134) ;
+        }
+        .text {
+            padding-top: 10px;
+            text-align: center;
+            font-family: 'Noto Serif Thai', serif;
+        }
+        .outside {
+            margin : 10px;
+            padding-bottom: 20px;
+            border: 7px dashed rgb(74, 48, 7);
+        }
+        a:link {
+             color:rgb(74, 48, 7);
+        }
+        a:hover{
+            color:lemonchiffon;
+        }   
+        body {
+            background-image: url("bear4.jfif");
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="https://www.youtube.com/watch?v=u14Vr0XggMI">Yuuka</a></li>
+                <li><a href="https://www.youtube.com/watch?v=2FxYYY9E6hs">Fresh</a></li>
+                <li><a href="https://youtu.be/zWxuc8L0W_Y">Yeepoon</a></li>
+            </ul>
+        </nav>
+    </div>
+    <h3 style="text-align: right;">Power Code Girl,ณัฏฐณิชา แก้วพูลศรี 6510405474</h3>
+    <div style="text-align: center;">
+        <h1 style="color : rgb(78, 48, 4); font-size: 400%; font-family: 'Sigmar One', cursive; margin-bottom: 1%; margin-top: 0%;">power code girl</h1>
+    </div>
+    <div class="outside">
+        <div style="text-align: center; padding-top: 20px;">
+            <h3 style="color : rgb(78, 48, 4); font-size: 200%; font-family: 'Sriracha', cursive;">Member Information</h3>
+        </div>
+        <div class="frame">
+            <center><img src="U.jpg" width="30%"></center>
+            <div class="text">
+                <p><b>Name :</b> Yuuka Kawai</p>
+                <p><b>Nickname :</b> Yuuka</p>
+                <p><b>Number :</b> 6510405768</p>
+            </div>
+        </div>
+        <div class="frame">
+            <center><img src="Fresh.jpg" width="40%"></center>
+            <div class="text">
+                <p><b>Name :</b> Nuttanicha Kaeopholsri</p>
+                <p><b>Nickname :</b> Fresh</p>
+                <p><b>Number :</b> 6510405474</p>
+            </div>
+        </div>
+        <div class="frame">
+            <center><img src="Yeepoon.jpg" width="50%"></center>
+            <div class="text">
+                <p><b>Name :</b> Panisara Phusri</p>
+                <p><b>Nickname :</b> Yeepoon</p>
+                <p><b>Number :</b> 6510405661</p>
+            </div>
+         </div>
+    </div>
+</body>
+</html>
